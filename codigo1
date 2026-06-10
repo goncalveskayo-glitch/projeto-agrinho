@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtividade no Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Menu -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">🌿 Campo<span>Produtivo</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#gerenciador">Painel de Tarefas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Eficiência e Organização na Agricultura</h1>
+            <p>Transforme a rotina da sua propriedade rural com técnicas de gestão moderna e foco em resultados sustentáveis.</p>
+            <a href="#gerenciador" class="btn">Organizar Minha Rotina</a>
+        </div>
+    </section>
+
+    <!-- Seção de Pilares -->
+    <section id="pilares" class="container section">
+        <h2 class="section-title">Como Aumentar a Produtividade?</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>📅 Planejamento</h3>
+                <p>Defina o calendário de plantio, manutenção de maquinários e colheita antes do início de cada ciclo.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Controle Financeiro</h3>
+                <p>Monitore rigorosamente os custos com insumos, combustível e mão de obra para evitar desperdícios.</p>
+            </div>
+            <div class="card">
+                <h3>⚙️ Automação</h3>
+                <p>Use planilhas e sistemas simples para registrar dados e gastar menos tempo com burocracia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Tecnologias -->
+    <section id="tecnologias" class="bg-light">
+        <div class="container section">
+            <h2 class="section-title">Tecnologia a Favor do Produtor</h2>
+            <div class="grid-2">
+                <div class="tech-item">
+                    <h4>Sensores e Clima</h4>
+                    <p>Acompanhar a previsão do tempo e a umidade do solo por aplicativos evita perdas de defensivos e otimiza a irrigação.</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Gestão Digital</h4>
+                    <p>Substituir o caderno por um aplicativo de tarefas ajuda a delegar funções para a equipe de campo sem esquecimentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ferramenta Interativa (JavaScript) -->
+    <section id="gerenciador" class="container section">
+        <h2 class="section-title">Gerenciador de Tarefas Rurais</h2>
+        <p class="section-subtitle">Planeje as atividades do dia (Ex: Revisar trator, aplicar adubo, checar irrigação).</p>
+        
+        <div class="todo-box">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Digite uma nova tarefa para o campo...">
+                <button onclick="addTask()">Adicionar</button>
+            </div>
+            <ul id="taskList">
+                <!-- As tarefas aparecerão aqui -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Campo Produtivo. Sustentabilidade e Eficiência no Agronegócio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
